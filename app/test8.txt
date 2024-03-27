@@ -1,0 +1,40 @@
+remote:
+remote: [stage-8] Running tests for Stage #8: Post a file
+remote: [stage-8] Running program
+remote: [stage-8] $ ./your_server.sh --directory /tmp/data/codecrafters.io/http-server-tester/
+remote: [stage-8] You can use the following curl command to test this locally
+remote: [stage-8] $ curl -v -X POST http://localhost:4221/files/donkey_monkey_237_scooby -d 'dooby Coo humpty vanilla dumpty monkey Monkey Horsey'
+remote: [stage-8] Sending request (status line): POST /files/donkey_monkey_237_scooby HTTP/1.1
+remote: [stage-8] Sending request: (Messages with >>> prefix are part of this log)
+remote: [stage-8] >>> POST /files/donkey_monkey_237_scooby HTTP/1.1
+remote: [stage-8] >>> Host: localhost:4221
+remote: [stage-8] >>> User-Agent: Go-http-client/1.1
+remote: [stage-8] >>> Content-Length: 52
+remote: [stage-8] >>> Accept-Encoding: gzip
+remote: [stage-8] >>>
+remote: [stage-8] >>> dooby Coo humpty vanilla dumpty monkey Monkey Horsey
+remote: [your_program] Logs from your program will appear here!
+remote: [your_program] Waiting for a client to connect...
+remote: [your_program] Client connected
+remote: [your_program] Waiting for a client to connect...
+remote: [your_program] Method: POST
+remote: [your_program] Path: /files/donkey_monkey_237_scooby
+remote: [your_program] Content: HTTP/1.1
+remote: [your_program]
+remote: [your_program] ReqPath: files
+remote: [your_program] ReqPath: donkey_monkey_237_scooby
+remote: [your_program] Filename: /tmp/data/codecrafters.io/http-server-tester/donkey_monkey_237_scooby
+remote: [your_program] File not found: /tmp/data/codecrafters.io/http-server-tester/donkey_monkey_237_scooby
+remote: [stage-8] Received response: (Messages with >>> prefix are part of this log)
+remote: [stage-8] >>> HTTP/1.1 404 NOT FOUND
+remote: [stage-8] >>> Connection: close
+remote: [stage-8] >>>
+remote: [stage-8] >>>
+remote: [stage-8] Expected status code 201, got 404
+remote: [stage-8] Test failed
+remote: [stage-8] Terminating program
+remote: [stage-8] Program terminated successfully
+remote:
+remote: Try our CLI to run tests faster without Git: https://codecrafters.io/cli
+remote:
+remote: View stage instructions: https://app.codecrafters.io/courses/http-server.
